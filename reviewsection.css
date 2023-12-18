@@ -1,0 +1,105 @@
+.container-review h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    
+  }
+  
+  .container-review .description {
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  .container-review .clientImage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .container-review .clientImage span {
+    margin-left: 10px;
+    color: white;
+  }
+  
+  .container-review .clientImage img {
+    width: 40px;
+  }
+  
+  .container-review .reviewSection {
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .container-review .reviewItem {
+    width: 300px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #10102a;
+    border: 1px solid #10102a;
+    transition: all .2s linear;
+  }
+  
+  .container-review .reviewItem:hover {
+    border-color: aqua;
+    transform: scale(1.01);
+    background-color: #090921;
+    box-shadow: 0 0px 5px 0px #cbc0c0;
+  }
+  
+  .container-review .top {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .container-review .top ul {
+    display: flex;
+    list-style: none;
+    color: white;
+  }
+  
+  .container-review .top ul li {
+    color: white;
+  }
+  
+  .container-review article p {
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 0.25rem; /* changed from 0.5rem */
+    font-family: system-ui;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .container-review .description {
+      width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 375px) {
+    .container-review .reviewSection {
+      padding: 0;
+    }
+  
+    .container-review .reviewItem {
+      width: 100%;
+    }
+  
+    .container-review .clientImage {
+      margin-bottom: 0.6rem;
+    }
+  
+    .container-review .top {
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  
+  
